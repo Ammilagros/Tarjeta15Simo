@@ -1,0 +1,314 @@
+/*ESTILOS GENERALES*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    margin: 0 auto;
+    background-color: #fcfcfc;
+}
+
+section{
+    display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    height: 100vh;
+    margin-bottom: 0.5em;
+    padding: 1em;
+}
+
+
+a{   
+    color: #57A773;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    
+}
+
+.contenedor_tarjetas{
+    border: solid .5px rgba(155, 119, 76, 0.5);
+    border-radius: 1em;
+    background-color: #fcfdff79;
+    grid-column: span 12;
+}
+
+.contenido_font{
+    color: Rgb(68, 63, 63);
+    font-size: 1.3em;
+    font-weight: 350;
+    font-family: "Quicksand", sans-serif;
+ }
+
+ .header_style{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    padding: 2em;
+    height: 5em;
+
+}
+
+ .header_font{
+    color: rgb(155, 119, 76);
+    font-family: "DM Serif Display", serif;
+    font-weight: 500;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+ }
+
+ .contenedor_fila{
+    display: flex;
+        flex-direction: row;
+        align-items: space-around;
+        justify-content: space-around;
+ }
+
+ /*BOTONES*/
+
+.boton_ancla{  
+    background-color: #57A773;
+        -webkit-border-radius: 0.6rem;
+        -moz-border-radius: 0.6rem;
+        border-radius: 0.6rem;
+    color: #F6F8FF;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    padding: 0.5em;
+    letter-spacing: 0.1em;
+}
+
+
+/*PRESENTACION - FECHA Y DRESSCODE EVENTO*/
+
+#entrada{
+    background-image: url(/Assets/fotoportada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #F6F8FF;
+}
+
+
+#entrada::before{
+    background-color: #1e212b44;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+
+#titulo_entrada, #info_evento, .ver_mas{
+    grid-column: span 12;
+    z-index: 2;
+}
+
+#titulo_entrada{
+    display: flex;
+        justify-content: center;
+        align-items: center; 
+        font-size: 3.5em;    
+    text-align: center;
+   
+}
+
+#titulo_principal{
+    color: #F6F8FF;
+    font-family: 'Plante', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+#info_evento{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+
+.info{
+    color: #F8F4F2;
+    letter-spacing: 0.1em;
+}
+
+#fecha{
+    padding: 1em;
+}
+
+.separador {
+    border-top: 0.1rem solid #F6F8FF;
+    padding: 0.5em;
+    width: 70%;
+}
+
+/*UBICACION Y CONFIRMAR ASISTENCIA*/
+
+#ubicacion_asistencia{
+    background-image: url(/Assets/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ubicacion, #confirmar_asistencia{
+    grid-column: span 12;
+}
+
+
+/*DIRECCION Y GOOGLEMAPS*/
+
+#ubicacion {
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    text-align: center; 
+    height: 50%;
+}
+
+#direccion{
+    padding: 1em;
+}
+
+#direccion > p{
+    padding: 1em;
+}
+
+#google_maps{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    font-size: 1.5em;
+}
+
+
+#boton_maps{
+    padding: 1em;
+}
+
+
+/*CONFIRMAR ASISTENCIA*/
+
+#confirmar_asistencia{
+    height: 30%;
+}
+#txt_confirmar_asistencia{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    text-align: center;
+    height: 50%;
+}
+
+#respuesta{
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;  
+    text-align: center;
+    grid-column: span 6;
+}
+
+#respuesta > a{
+    display: flex;
+        justify-content: center;
+        align-items: center;    
+}
+
+
+/*REGALO CBU*/
+#regalo_cbu{
+    background-image: url(/Assets/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#descripcion_cbu{  
+    display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center; 
+    text-align: center;       
+    grid-column: span 12;
+}
+
+#descripcion_cbu > .texto_regalo{
+    padding: 1em;
+}
+
+/*PLAYLIST_SPOTIFY*/
+
+#playlist{
+    background-image: url(/Assets/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#presentacion_playlist, #spotify{
+    display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    grid-column: span 12;    
+    padding: 1em;
+}
+
+
+#spotify > p{
+    text-align: center;
+    padding: 1em;
+}
+
+#contenedor_spotify{
+    padding: 3em;
+}
+
+
+/*CARRUSEL*/
+#carrusel{
+    background-image: url(/Assets/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/*MEDIAQUERIS - AJUSTES DE RESOLUCION*/
+
+@media(min-width: 620px){
+    .header_font{
+        font-size: 3em;
+    }
+      .contenido_font{
+         font-size: 1.4em;
+      }
+
+    .boton_ancla{
+        padding: 0.7em;
+    }
+
+    #titulo_entrada{
+        font-size: 5em;
+    }
+
+    .separador{
+        width: 40%;
+    }
+
+
+}
+
+/*FUENTES*/
+@font-face {
+    font-family: 'Plante';
+    src: url('/Assets/Fonts/plante/Plante.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
