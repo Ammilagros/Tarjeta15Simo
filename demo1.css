@@ -21,8 +21,8 @@ section{
 
 
 a{   
-    color: #57A773;
-    font-family: "Quicksand", sans-serif;
+    color: #50A05A;
+    font-family: "Montserrat", sans-serif;
     letter-spacing: 0.1em;
     text-decoration: none;
     
@@ -39,17 +39,9 @@ a{
     color: Rgb(68, 63, 63);
     font-size: 1.3em;
     font-weight: 350;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Roboto", sans-serif;
  }
 
- .header_style{
-    display: flex;
-        align-items: center;
-        justify-content: center;
-    padding: 2em;
-    height: 5em;
-
-}
 
  .header_font{
     color: rgb(155, 119, 76);
@@ -61,21 +53,21 @@ a{
 
  .contenedor_fila{
     display: flex;
-        flex-direction: row;
-        align-items: space-around;
+        flex-direction: column;
         justify-content: space-around;
  }
 
  /*BOTONES*/
 
 .boton_ancla{  
-    background-color: #57A773;
+    background-color: #50A05A;
         -webkit-border-radius: 0.6rem;
         -moz-border-radius: 0.6rem;
         border-radius: 0.6rem;
     color: #F6F8FF;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
     padding: 0.5em;
     letter-spacing: 0.1em;
 }
@@ -158,24 +150,28 @@ a{
     grid-column: span 12;
 }
 
+.header_ubi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5em;
+}
 
 /*DIRECCION Y GOOGLEMAPS*/
 
 #ubicacion {
-    display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     text-align: center; 
-    height: 50%;
 }
 
-#direccion{
+#direccion{  
     padding: 1em;
 }
 
 #direccion > p{
     padding: 1em;
+}
+.contenedor_fila > .contenido_font{
+    padding: 0.5em;
 }
 
 #google_maps{
